@@ -5,6 +5,7 @@ var stylus = require('gulp-stylus');
 var cssnano = require('gulp-cssnano');
 var coffee = require('gulp-coffee');
 var gutil = require('gulp-util');
+var uglify = require('gulp-uglify');
 
 gulp.task('jade', function () {
   return gulp.src('*.jade')
@@ -19,11 +20,12 @@ gulp.task('stylus', function () {
   return gulp.src('*.styl')
     .pipe(stylus())
     .pipe(cssnano())
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build/'));
 });
 
 gulp.task('coffee', function() {
-  gulp.src('*.coffee')
-    .pipe(coffee({bare: true}).on('error', gutil.log))
-    .pipe(gulp.dest('build/'))
+  return gulp.src('*.coffee')
+    .pipe(coffee({bare: false}).on('error', gutil.log))
+    .pipe(uglify())
+    .pipe(gulp.dest('build/'));
 });

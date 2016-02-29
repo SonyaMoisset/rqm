@@ -11,7 +11,8 @@ This is a random quote machine on design.
 ## Technologies Used
 
 Webpage: HTML5, CSS3, JS    
-Templating: Jade, Stylus , CoffeeScript   
+CSS Framework: Material Design Lite    
+Templating: Jade, Stylus, CoffeeScript   
 Package manager: NPM    
 Workflow Automation: Gulp   
 

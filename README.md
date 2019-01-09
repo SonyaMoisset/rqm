@@ -1,5 +1,7 @@
 # Random Quote Machine / RQM
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SonyaMoisset/rqm.svg)](https://greenkeeper.io/)
+
 ##### Build a Random Quote Machine.
 
 #### By Sonya Moisset for FreeCodeCamp

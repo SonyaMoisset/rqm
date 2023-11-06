@@ -23,7 +23,7 @@
     "gulp-stylus": "3.0.1",
     "gulp-uglify": "3.0.2",
     "gulp-util": "3.0.8",
-    "jade": "1.11.0",
+    "pug": "2.0.0",
     "jshint": "2.13.5",
     "stylus": "0.61.0"
   }
